@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'montserrat', sans-serif;
+  }
+  #app {
+    /* background-image: url('./assets/cold-bg.jpg'); */
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4s;
+  }
+  
+  main {
+    min-height: 100vh;
+    padding: 25px;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)); */
+    background-color: skyblue;
+  }
+  
+  .search-bar {
+    background-color: #FFF;
+    display: flex;
+    padding: 10px 18px; 
+    color: #313131;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transition: 0.4s;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-box{
+    width: 90%;
+    font-size: 20px;
+    appearance: none;
+    border:none;
+    outline: none;
+    background: none;
+  }
+  
+  .search-bar img{
+    width: 25px;
+  }
+  
+  /* .search-box:focus {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 16px 0px 16px 0px;
+  } */
+  
+  
+  .location-box .location {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+  }
+  .location-box .date {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+  }
+  .weather-box {
+    text-align: center;
+  }
+  .weather-box{
+    display: grid;
+    column-gap: 20px;
+    row-gap:10px;
+    grid-template-columns: repeat (2, 1fr);
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 900;
+    background-color:rgba(255, 255, 255, 0.993);
+    border-radius: 16px;
+    margin: 30px 0px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  }
+  
+  .weather-box .pressure{ 
+    background-color: rgb(228, 224, 224);
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px;
+  
+  }
+  
+  .pressure h6{
+    font-size: 18px;
+  }
+  
+  .weather-box .humidity{
+    background-color:  rgb(228, 224, 224);
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px;
+    grid-column-start: 2;
+  }
+  
+  .humidity h6{
+    font-size: 18px;
+  }
+  
+  .weather-box .weather {
+    color: rgb(14, 13, 13);
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .sun h6{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .sun p{
+    font-size: 18px;
+    color: grey;
+    font-weight: 100;
+  }
